@@ -1,0 +1,134 @@
+.to--btn {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-bottom: 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  opacity: 1;
+  letter-spacing: .5px;
+}
+.to--btn.sm {
+  font-size: .75rem;
+}
+.to--btn.lg {
+  font-size: 1.25rem;
+}
+.to--btn.xl {
+  font-size: 1.5rem;
+}
+.to--btn.rounded {
+  border-radius: 1rem;
+}
+.to--btn.has-icon {
+  padding-left: calc( 1.5rem + 10px );
+}
+.to--btn.has-icon:before {
+  content: '';
+  background-image: url('../img/mobile-w.png');
+  background-size: 10px 15px;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  left: .8rem;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.to--btn.has-icon.icon-dark:before {
+  background-image: url('../img/mobile-b.png');
+}
+.to--btn:focus,
+.to--btn:active:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.to--btn:hover,
+.to--btn:focus {
+  text-decoration: none;
+  opacity: .925;
+}
+.to--btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+#to-flt-btn {
+  position: fixed;
+  display: table;
+  bottom: 1rem;
+  right: 1rem;
+  width: fit-content;
+  margin: 0;
+  z-index: 999;
+}
+@media (max-width: 767px) {
+  #to-flt-btn.no-mobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #to-flt-btn.no-desktop {
+    display: none;
+  }
+}
+#to-flt-btn.bot-left {
+  right: unset;
+  left: 1rem;
+}
+#to-flt-btn.bot-center {
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#to-flt-btn.mid-right {
+  bottom: 0;
+  top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#to-flt-btn.mid-left {
+  bottom: 0;
+  top: 0;
+  right: unset;
+  left: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#to-flt-btn.top-right {
+  bottom: unset;
+  top: 1rem;
+}
+#to-flt-btn.top-left {
+  bottom: unset;
+  top: 1rem;
+  right: unset;
+  left: 1rem;
+}
+#to-flt-btn.top-center {
+  bottom: unset;
+  top: 1rem;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
